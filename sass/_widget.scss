@@ -1,0 +1,53 @@
+
+.widget-area {
+
+	ul {
+		margin:0;
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			border-bottom: 1px dotted #ddd;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
+	a {
+		color: #6fa81e;
+		text-decoration: none;
+
+		&:hover {
+			color: #222;
+		}
+	}
+}
+
+.widget {
+	background-color: #fff;
+	padding: 40px;
+	@include box-shadow(0 2px rgba(0,0,0,.05));
+	clear: both;
+	margin-bottom: 40px;
+	overflow: hidden;
+	word-wrap: break-word;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+	.widget-title {
+		background-color: #f5f5f5;
+		border-left: 6px solid #dbdbdb;
+		margin-left: -40px;
+		margin-top: -20px;
+		padding: 20px 40px 20px 34px;
+	}
+
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}

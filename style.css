@@ -1,0 +1,393 @@
+/*
+Theme Name: _mie
+Theme URI: https://alispx.me
+Author: alispx
+Author URI: http://alispx.me
+Description: Starter project
+Version: 1.0
+License: GNU General Public License V2 or Later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Text Domain: _mie
+Tags: 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into
+the _mie starter theme from Automattic, the guys behind WordPress.
+
+_mie (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+
+Twitter Bootstrap
+
+*/
+/* line 3, sass/_wpbase.scss */
+.wp-caption img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+/* line 9, sass/_wpbase.scss */
+.btn-primary {
+  background-color: #6fa81e;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  padding: 10px 20px;
+}
+/* line 14, sass/_wpbase.scss */
+.btn-primary:hover {
+  background-color: #7dbe22;
+}
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+/* line 1, sass/_header.scss */
+body {
+  background: whitesmoke;
+}
+/* line 4, sass/_header.scss */
+body a {
+  color: #6fa81e;
+  text-decoration: none;
+}
+/* line 7, sass/_header.scss */
+body a:hover {
+  color: #222;
+}
+/* line 10, sass/_header.scss */
+body a:visited {
+  color: #6fa81e;
+}
+
+/* line 16, sass/_header.scss */
+a {
+  color: royalblue;
+}
+/* line 19, sass/_header.scss */
+a:visited {
+  color: purple;
+}
+/* line 24, sass/_header.scss */
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+/* line 27, sass/_header.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 31, sass/_header.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 36, sass/_header.scss */
+.site-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+/* line 41, sass/_header.scss */
+.site-title a {
+  text-decoration: none;
+}
+
+/* line 46, sass/_header.scss */
+.site-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+/*--------------------------------------------------------------
+Menus
+--------------------------------------------------------------*/
+/* line 1, sass/_menus.scss */
+.main-navigation {
+  background-color: #fff;
+  border-top: 5px solid #6fa81e;
+  display: block;
+  float: left;
+  -webkit-box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 10, sass/_menus.scss */
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+/* line 15, sass/_menus.scss */
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  float: left;
+  position: absolute;
+  top: 4.5em;
+  z-index: 99999;
+  display: none;
+}
+/* line 24, sass/_menus.scss */
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+/* line 29, sass/_menus.scss */
+.main-navigation ul ul .menu-item {
+  text-align: left;
+}
+/* line 34, sass/_menus.scss */
+.main-navigation ul ul li:hover > ul {
+  left: 100%;
+}
+/* line 39, sass/_menus.scss */
+.main-navigation ul ul a {
+  width: 200px;
+}
+/* line 50, sass/_menus.scss */
+.main-navigation ul li:hover > ul {
+  left: auto;
+  display: block;
+}
+/* line 55, sass/_menus.scss */
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+/* line 63, sass/_menus.scss */
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  padding: 20px 30px !important;
+  color: #222;
+}
+/* line 69, sass/_menus.scss */
+.main-navigation a:hover {
+  background: #6fa81e !important;
+  color: #fff;
+}
+
+/* Small menu. */
+/* line 82, sass/_menus.scss */
+.menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 88, sass/_menus.scss */
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+    display: block;
+  }
+
+  /* line 92, sass/_menus.scss */
+  .main-navigation ul {
+    display: none;
+  }
+}
+/*--------------------------------------------------------------
+Main Content
+--------------------------------------------------------------*/
+/* line 1, sass/_main.scss */
+.main-content {
+  margin-top: 40px;
+}
+
+/*--------------------------------------------------------------
+Post and Pages
+--------------------------------------------------------------*/
+/* line 1, sass/_post-and-pages.scss */
+.sticky {
+  display: block;
+}
+
+/* line 5, sass/_post-and-pages.scss */
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+/* line 10, sass/_post-and-pages.scss */
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 15, sass/_post-and-pages.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 21, sass/_post-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+/* line 25, sass/_post-and-pages.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/* line 30, sass/_post-and-pages.scss */
+.article, .comments-area {
+  background-color: #fff;
+  margin-bottom: 40px;
+  padding: 40px 60px 60px;
+  -webkit-box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+}
+
+/* line 38, sass/_post-and-pages.scss */
+.article img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 45, sass/_post-and-pages.scss */
+.wp-caption img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+/* line 52, sass/_post-and-pages.scss */
+.entry-header .entry-title {
+  font-size: 36px;
+  border-left: 6px solid #222;
+  margin-left: -60px;
+  padding: 20px 54px;
+}
+/* line 58, sass/_post-and-pages.scss */
+.entry-header .entry-title a {
+  text-decoration: none;
+  color: #222;
+}
+/* line 64, sass/_post-and-pages.scss */
+.entry-header .entry-meta {
+  background-color: #f5f5f5;
+  border-left: 6px solid #dbdbdb;
+  padding: 18px 54px;
+  margin: 0 -20px 0 -60px;
+}
+
+/* line 73, sass/_post-and-pages.scss */
+.entry-footer {
+  border-top: 1px dotted #ddd;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+/*--------------------------------------------------------------
+Pagination
+--------------------------------------------------------------*/
+/* line 1, sass/_pagination.scss */
+.pager li > a, .pager li > span {
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+
+/*--------------------------------------------------------------
+Post and Pages
+--------------------------------------------------------------*/
+/* line 1, sass/_comments.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 4, sass/_comments.scss */
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+Widget
+--------------------------------------------------------------*/
+/* line 4, sass/_widget.scss */
+.widget-area ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 9, sass/_widget.scss */
+.widget-area ul li {
+  border-bottom: 1px dotted #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+/* line 16, sass/_widget.scss */
+.widget-area a {
+  color: #6fa81e;
+  text-decoration: none;
+}
+/* line 20, sass/_widget.scss */
+.widget-area a:hover {
+  color: #222;
+}
+
+/* line 26, sass/_widget.scss */
+.widget {
+  background-color: #fff;
+  padding: 40px;
+  -webkit-box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+  clear: both;
+  margin-bottom: 40px;
+  overflow: hidden;
+  word-wrap: break-word;
+  /* Make sure select elements fit in widgets. */
+}
+/* line 36, sass/_widget.scss */
+.widget select {
+  max-width: 100%;
+}
+/* line 40, sass/_widget.scss */
+.widget .widget-title {
+  background-color: #f5f5f5;
+  border-left: 6px solid #dbdbdb;
+  margin-left: -40px;
+  margin-top: -20px;
+  padding: 20px 40px 20px 34px;
+}
+
+/* Search widget. */
+/* line 51, sass/_widget.scss */
+.widget_search .search-submit {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+/* line 1, sass/_footer.scss */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  clear: both;
+  font-size: 16px;
+  margin-top: 40px;
+  padding: 40px 0 50px;
+  text-align: left;
+}
+/* line 10, sass/_footer.scss */
+.site-footer a {
+  color: #6fa81e;
+}
+/* line 13, sass/_footer.scss */
+.site-footer a:hover {
+  color: #f0f0f0;
+}

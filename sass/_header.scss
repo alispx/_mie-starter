@@ -1,0 +1,50 @@
+body {
+	background: whitesmoke;
+
+	a {
+		color: #6fa81e;
+		text-decoration: none;
+		&:hover {
+			color:#222;
+		}
+		&:visited {
+			color: #6fa81e;
+		}
+	}
+}
+
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.site-title {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.site-description {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.3;
+}

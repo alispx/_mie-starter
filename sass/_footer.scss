@@ -1,0 +1,17 @@
+.site-footer {
+	background-color: #222;
+	color: #fff;
+	clear: both;
+	font-size: 16px;
+	margin-top: 40px;
+	padding: 40px 0 50px;
+	text-align: left;
+
+	a {
+		color: #6fa81e;
+
+		&:hover {
+			color:#f0f0f0;
+		}
+	}
+}

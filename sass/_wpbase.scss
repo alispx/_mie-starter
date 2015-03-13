@@ -1,0 +1,17 @@
+.wp-caption {
+
+	img {
+		max-width:100% !important;
+		height: auto;
+	}
+}
+
+.btn-primary {
+	background-color: #6fa81e;
+	@include border-radius(0);
+	border:none;
+	padding: 10px 20px;
+	&:hover {
+		background-color: lighten(#6fa81e, 5);
+	}
+} 

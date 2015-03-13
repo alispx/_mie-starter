@@ -1,0 +1,67 @@
+/*
+Theme Name: _mie
+Theme URI: https://alispx.me
+Author: alispx
+Author URI: http://alispx.me
+Description: Starter project
+Version: 1.0
+License: GNU General Public License V2 or Later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Text Domain: _mie
+Tags: 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into
+the _mie starter theme from Automattic, the guys behind WordPress.
+
+_mie (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+
+Twitter Bootstrap
+
+*/
+
+@import "compass/css3";
+@import "variables";
+@import "wpbase";
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+@import "header";
+
+/*--------------------------------------------------------------
+Menus
+--------------------------------------------------------------*/
+@import "menus";
+
+/*--------------------------------------------------------------
+Main Content
+--------------------------------------------------------------*/
+@import "main";
+
+/*--------------------------------------------------------------
+Post and Pages
+--------------------------------------------------------------*/
+@import "post-and-pages";
+
+/*--------------------------------------------------------------
+Pagination
+--------------------------------------------------------------*/
+@import "pagination";
+
+/*--------------------------------------------------------------
+Post and Pages
+--------------------------------------------------------------*/
+@import "comments";
+
+/*--------------------------------------------------------------
+Widget
+--------------------------------------------------------------*/
+@import "widget";
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+@import "footer";
