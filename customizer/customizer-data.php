@@ -109,6 +109,7 @@ function mie_standard_settings_data( $mie_options ) {
 				'label'		=> __( 'Footer Background', '_mie' ),
 				'section'	=> 'mie_footer_settings',
 				'selector'	=> '.site-footer',
+				'property'	=> 'background-color',
 				'type' 		=> 'color'
 			);
 
@@ -119,6 +120,7 @@ function mie_standard_settings_data( $mie_options ) {
 				'label'		=> __( 'Footer Text Color', '_mie' ),
 				'section'	=> 'mie_footer_settings',
 				'selector'	=> '.site-info',
+				'property'	=> 'color',
 				'type' 		=> 'color'
 			);
 
@@ -129,6 +131,7 @@ function mie_standard_settings_data( $mie_options ) {
 				'label'		=> __( 'Footer Link Color', '_mie' ),
 				'section'	=> 'mie_footer_settings',
 				'selector'	=> '.site-info a',
+				'property'	=> 'color',
 				'type' 		=> 'color'
 			);
 
